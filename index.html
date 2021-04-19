@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Event Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Event Notifier</h3>
+
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Event Notifier. You're currently logged in.</p>
+    <button onclick="logout()">Continue</button>
+  </div>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCrS3u-xFn4jFEUp9d_lCY_myMp4wu5vzE",
+    authDomain: "login-c59fb.firebaseapp.com",
+    databaseURL: "https://login-c59fb-default-rtdb.firebaseio.com",
+    projectId: "login-c59fb",
+    storageBucket: "login-c59fb.appspot.com",
+    messagingSenderId: "714983196794",
+    appId: "1:714983196794:web:30b7f76067c1ed78e313c3",
+    measurementId: "G-QYWLE0SKLL"
+  };// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>
